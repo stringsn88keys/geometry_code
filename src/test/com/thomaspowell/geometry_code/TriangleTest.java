@@ -10,7 +10,7 @@ public class TriangleTest {
     }
     @Test
     public void UnitRightTriangleArea() {
-        assertEquals(0.5, UnitRightTriangle().area());
+        assertEquals(0.5, UnitRightTriangle().area(), 0.000000001);
     }
 
     @Test
