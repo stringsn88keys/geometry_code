@@ -17,4 +17,11 @@ public class TriangleTest {
     public void UnitRightTrianglePerimeter() {
         assertEquals(2 + Math.sqrt(2), UnitRightTriangle().perimeter());
     }
+
+    @Test
+    public void UnitRightTrianglePointInTriangle() {
+        assertTrue(UnitRightTriangle().pointInTriangle(new Point(0.5, 0.5)));
+        assertFalse(UnitRightTriangle().pointInTriangle(new Point(0.5, 0.50001)));
+        assertFalse(UnitRightTriangle().pointInTriangle(new Point(0.50001, 0.5)));
+    }
 }

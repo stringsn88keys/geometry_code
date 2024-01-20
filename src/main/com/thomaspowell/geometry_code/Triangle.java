@@ -49,4 +49,13 @@ public class Triangle {
         area = Math.sqrt(s * (s - sideLength(0,1)) * (s - sideLength(1,2)) * (s - sideLength(2,0)));
         return area;
     }
+
+    public boolean pointInTriangle(Point p) {
+        for(Point point : points) {
+            if (point.equals(p)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
